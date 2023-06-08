@@ -12,10 +12,11 @@ import (
 func SetupAPI() {
 	fmt.Println("Starting server...")
 
-	router := gin.Default()
+	router := gin.Default()	
+	router.Use(cors.Default())
+
 	routes.SetupRoutes(router)
 
-	router.Use(cors.Default())
 
 	router.Run()
 	

@@ -14,7 +14,7 @@ func AgendaCreator(c *gin.Context) models.Presentation {
 	 Lav en agenda for præsentationen om %s på dansk
 	- Returner agendaen i et JSON format
 	- Giv titler til hver slide og subtitler til hver slide
-	- Lav 4 slides
+	- Lav 2 slides
 	- FOLLOW THIS STRUCTURE STRICTLY
 	EXAMPLE:
 	{
