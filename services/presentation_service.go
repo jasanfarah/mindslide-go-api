@@ -3,10 +3,11 @@ package services
 import (
 	"encoding/json"
 	"fmt"
+	"sync"
+
 	"github.com/gin-gonic/gin"
 	"github.com/jasanfarah/mindslide-go-api/models"
 	"github.com/jasanfarah/mindslide-go-api/utils"
-	"sync"
 )
 
 func AgendaCreator(c *gin.Context) models.Presentation {
@@ -50,6 +51,7 @@ func AgendaCreator(c *gin.Context) models.Presentation {
 	json.NewDecoder(c.Request.Body).Decode(&topicRequest)
 
 	prompt := fmt.Sprintf(agenda, topicRequest.Topic)
+	fmt.Println(prompt)
 	generatedAgendaJSON := utils.Generator(prompt)
 	var presentation models.Presentation
 
@@ -103,6 +105,7 @@ func PresentationCreator(c *gin.Context) models.Presentation {
 	var presentation models.Presentation
 
 	presentation = AgendaCreator(c)
+	fmt.Println(presentation)
 	var FinalPresentation models.Presentation
 
 	slideAmount := len(presentation.Slides)

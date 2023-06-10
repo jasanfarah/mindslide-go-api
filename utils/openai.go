@@ -1,15 +1,16 @@
 package utils
 
 import (
-	openai "github.com/sashabaranov/go-openai"
-	"github.com/jasanfarah/mindslide-go-api/config"
 	"context"
 	"fmt"
-
+	"os"
+	openai "github.com/sashabaranov/go-openai"
 )
 
 func Generator(prompt string) string {
-	openaiKey := config.GoDotEnvVariable("OPENAI_KEY")
+
+
+	openaiKey := os.Getenv("OPENAI_KEY")
 	c := openai.NewClient(openaiKey)
 	ctx := context.Background()
 
