@@ -51,7 +51,7 @@ func AgendaCreator(c *gin.Context) models.Presentation {
 	json.NewDecoder(c.Request.Body).Decode(&topicRequest)
 
 	prompt := fmt.Sprintf(agenda, topicRequest.Topic)
-	fmt.Println(prompt)
+	//fmt.Println(prompt)
 	generatedAgendaJSON := utils.Generator(prompt)
 	var presentation models.Presentation
 
@@ -91,11 +91,11 @@ func AgendaPresentationCreator(c *gin.Context) models.Presentation {
 		wg.Wait()
 
 		//fmt.Println("Results:")
-
+ 
 		FinalPresentation.Slides = append(FinalPresentation.Slides, models.Slide{Title: slideTitle, Subtitle: subTitles})
 	}
 
-	fmt.Println(FinalPresentation)
+	//fmt.Println(FinalPresentation)
 	return FinalPresentation
 
 }
@@ -105,11 +105,11 @@ func PresentationCreator(c *gin.Context) models.Presentation {
 	var presentation models.Presentation
 
 	presentation = AgendaCreator(c)
-	fmt.Println(presentation)
+//	fmt.Println(presentation)
 	var FinalPresentation models.Presentation
 
 	slideAmount := len(presentation.Slides)
-	fmt.Println(slideAmount)
+	//fmt.Println(slideAmount)
 	var wg sync.WaitGroup
 	var mu sync.Mutex
 
@@ -133,7 +133,7 @@ func PresentationCreator(c *gin.Context) models.Presentation {
 		FinalPresentation.Slides = append(FinalPresentation.Slides, models.Slide{Title: slideTitle, Subtitle: subTitles})
 	}
 
-	fmt.Println(FinalPresentation)
+ //	fmt.Println(FinalPresentation)
 	return FinalPresentation
 
 }
