@@ -70,9 +70,7 @@ func AgendaPresentationCreator(c *gin.Context) models.Presentation {
 
 	var FinalPresentation models.Presentation
 
-	slideAmount := len(presentation.Slides)
-	fmt.Println(slideAmount)
-	var wg sync.WaitGroup
+  var wg sync.WaitGroup
 	var mu sync.Mutex
 
 	for _, slide := range presentation.Slides {
@@ -108,9 +106,7 @@ func PresentationCreator(c *gin.Context) models.Presentation {
 //	fmt.Println(presentation)
 	var FinalPresentation models.Presentation
 
-	slideAmount := len(presentation.Slides)
-	//fmt.Println(slideAmount)
-	var wg sync.WaitGroup
+  var wg sync.WaitGroup
 	var mu sync.Mutex
 
 	for _, slide := range presentation.Slides {
