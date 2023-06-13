@@ -21,7 +21,7 @@ func FakeTestPresentationHandler(c *gin.Context) {
 		  {
 			Title: "Evolution af kunstig intelligens",
 			Subtitle: []string{
-			  "Begreber og teknikker relateret til kunstig intelligens, f.eks. neural netværk og maskinlæring",
+			  "Begreber og teknikker relateret til kunstig intelligens",
 			  "Omfattende problemer som løses med kunstig intelligens",
 			  "Hvordan kunstig intelligens bruger maskinlæring til at forudsige, klassificere og genkende data",
 			},
