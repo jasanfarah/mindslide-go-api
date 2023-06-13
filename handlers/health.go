@@ -11,23 +11,47 @@ func FakeTestPresentationHandler(c *gin.Context) {
 	presentation := models.Presentation{
 		Slides: []models.Slide{
 		  {
-			Title:    "Introduktion til Elon Musk",
+			Title: "Introduktion til kunstig intelligens",
 			Subtitle: []string{
-			  "Elon Musk er en innovativ opfinder og entreprenør, der er kendt for at starte firmaer som Tesla Motors, SpaceX, Neuralink og The Boring Company.",
-			  "Elon Musk har visioner der strækker sig ud over vores nuværende teknologi og åbner nye veje for bæredygtighed, innovation og den nyeste teknologi, der vil forandre vores fremtid.",
+			  "Definition og historie af kunstig intelligens",
+			  "Vigtige begreber af kunstig intelligens",
+			  "Relevante eksempler på anvendelser",
 			},
 		  },
 		  {
-			Title:    "Tesla og SpaceX",
+			Title: "Evolution af kunstig intelligens",
 			Subtitle: []string{
-			  "Elon Musks langsigtede mål er at udfordre hele industrien ved hjælp af Tesla og SpaceX.",
-			  "Tesla og SpaceX har fortsat visionen om at skabe bæredygtige køretøjer, der reducerer vores miljøpåvirkning og skaber et mere grønt og rent miljø.",
-			  "Tesla og SpaceX arbejder sammen for et fælles mål om at skabe en kolonisering af Mars, som er en stor del af Elons Musks drøm om at demokratisere adgangen til rummet.",
+			  "Begreber og teknikker relateret til kunstig intelligens, f.eks. neural netværk og maskinlæring",
+			  "Omfattende problemer som løses med kunstig intelligens",
+			  "Hvordan kunstig intelligens bruger maskinlæring til at forudsige, klassificere og genkende data",
+			},
+		  },
+		  {
+			Title: "Anvendelse af kunstig intelligens",
+			Subtitle: []string{
+			  "Grundlæggende elementer, som kunstig intelligens anvendes til at løse problemer",
+			  "Hvordan kunstig intelligens bruges til at forbedre produktivitet og præcision",
+			  "Brugssager i hverdagen som er muliggjort af kunstig intelligens",
+			},
+		  },
+		  {
+			Title: "Udfordringer for kunstig intelligens",
+			Subtitle: []string{
+			  "Væsentlige barrierer for brugen af kunstig intelligens",
+			  "Betydningen af etisk og moralsk ansvar for kunstig intelligens",
+			  "Hvor stor en betydning kunstig intelligens har på folks dagligdag",
+			},
+		  },
+		  {
+			Title: "Konklusion",
+			Subtitle: []string{
+			  "En sammenfattende gennemgang af kunstig intelligens' potentiale og udfordringer",
+			  "Vigtigheden af etisk ansvarlighed, når det kommer til kunstig intelligens",
+			  "Betydningen af kunstig intelligens for vores samfund i fremtiden",
 			},
 		  },
 		},
-	  }
-	  
+	  }	  
 	
 	c.JSON(200, presentation)
 }
