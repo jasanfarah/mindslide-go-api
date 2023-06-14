@@ -1,0 +1,48 @@
+{
+    "slides":[
+       {
+          "title":"Introduktion til Kunstig Intelligens",
+          "subtitle":[
+             "Definition af Kunstig Intelligens og AI",
+             "Grundlæggende egenskaber ved AI",
+             "Hvorfor er AI relevant for samfundet?",
+             "Eksempler på brug af AI i dag"
+          ]
+       },
+       {
+          "title":"Anvendelser af AI",
+          "subtitle":[
+             "Kunstig Generalintelligens",
+             "Automatisering af industrielle processer",
+             "Fremtidens energisystemer",
+             "AI og sundhedssektoren"
+          ]
+       },
+       {
+          "title":"Udfordringerne med AI",
+          "subtitle":[
+             "Etik og Regulering",
+             "Data Governance",
+             "Er AI en trussel?"
+                  ]
+       },
+       {
+          "title":"Tendenser for AI",
+          "subtitle":[
+             "Nye teknologier indenfor AI",
+             "Forståelsen af kompleksiteten af AI",
+             "Sundhedsdata og AI",
+             "Effekten af AI på arbejdsmarkedet"
+          ]
+       },
+       {
+          "title":"Konklusion",
+          "subtitle":[
+             "Opsummering af AI",
+             "Muligheder og udfordringer for AI",
+             "Implikationer af AI",
+             "Betydningen og lederskabet for AI i fremtiden"
+          ]
+       }
+    ]
+ }

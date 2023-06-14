@@ -1,0 +1,7 @@
+Might add
+- Change GPT model
+- Use function calling
+- Rate limiting
+- Logging
+- Integration to Google Slides API 
+- More themes
